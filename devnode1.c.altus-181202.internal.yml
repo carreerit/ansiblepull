@@ -1,4 +1,5 @@
 - name: Setup for devnode1.c.altus-181202.internal
+  hosts: localhost
   tasks:
     - name: Print some 
       debug:
