@@ -21,3 +21,5 @@
         - gzip 
         - vim 
         - net-tools
+    - name: reboot
+      shell: reboot
