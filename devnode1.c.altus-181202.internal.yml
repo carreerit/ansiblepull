@@ -1,0 +1,5 @@
+- name: Setup for devnode1.c.altus-181202.internal
+  tasks:
+    - name: Print some 
+      debug:
+        msg: "Hello, devnode1.c.altus-181202.internal"
