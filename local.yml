@@ -1,0 +1,23 @@
+- hosts: localhost
+  tasks:
+    - name: Disable SELINUX
+      selinux:
+        state: disabled
+       
+    - name: Disable Firewall
+      service:
+        name: firewalld
+        state: stopped
+        enabled: no
+        
+    - name: Install base packages
+      package:
+        name: "{{item}}"
+        state: latest
+      with_items:
+        - wget
+        - zip
+        - unzip
+        - gzip 
+        - vim 
+        - net-tools
